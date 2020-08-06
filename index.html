@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title> <style>
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            align-self: center;
+            margin-top: -10px;
+            font-family: arial, sans-serif;
+        }
+
+        .nav_ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu {
+            text-emphasis: none;
+            font-size: 14px;
+            padding: 1rem;
+            margin: -7px;
+        }
+
+        a {
+            color: rgba(0, 0, 0, 0.87);
+            text-decoration: none;
+        }
+
+        #app_google {
+            width: 205x;
+            height: 25px;
+        }
+
+        #boton_nav {
+            background: linear-gradient(0deg, #4387fd, #4683ea);
+            border: 1px solid #4285f4;
+            font-weight: bold;
+            outline: none;
+            color: #fff;
+            padding: 0 12px;
+            line-height: 28px;
+            border-radius: 2px;
+        }
+
+        a:hover {
+            opacity: 0.85;
+            text-decoration: underline
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10rem;
+        }
+
+
+        .search {
+            border: 1px solid grey;
+            border-radius: 24px;
+            width: 500px;
+            height: 40px;
+            margin: auto;
+            background: url(https://maurgb.github.io/google-homepage/lupa.png) 13px no-repeat;
+            text-emphasis: 4rem;
+            font-size: 1.6rem;
+        }
+
+        .search:hover {
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+            border-color: rgba(223, 225, 229, 0);
+            outline: none;
+        }
+
+        .boton_main {
+            font-size: 1.5rem;
+            padding: 1rem 1.5rem;
+        }
+
+        .boton {
+            color: #5f6368;
+            font-size: 14px;
+            padding: 0 16px;
+            border: 1px solid #f2f2f2;
+            margin: 11px 4px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            background-color: #f6f6f6;
+            border: 1px solid #c6c6c6;
+            color: #222;
+            outline: none;
+        }
+
+
+        .texto {
+            display: inline-block;
+            line-height: 28px;
+            font-family: sans-serif;
+            font-size: small;
+        }
+
+        #link_español {
+            color: #609;
+        }
+
+        footer {
+            background: #f2f2f2;
+            color: rgba(0, 0, 0, 0.67);
+            position: absolute;
+            width: 100vw;
+            bottom: 0;
+            font-family: sans-serif;
+        }
+
+        .footer_one {
+            font-size: 15px;
+            border: #000;
+            border-top: 1px solid #e4e4e4;
+            padding-left: 30px;
+        }
+
+        .footer_two {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: 1px solid #e4e4e4;
+            border: 1px solid #e4e4e4;
+            margin-left: 30px;
+            font-size: 14px;
+            min-width: 90rem;
+            word-spacing: 1rem;
+        }
+
+        .footer_der {
+            margin-right: 30px;
+        }
+
+        .no_spacing {
+            word-spacing: normal;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav_ul">
+            <li class="menu"> <a class="menu_link" href="#">Gmail</a></li>
+            <li class="menu"><a class="menu_link" href="#">Imagenes</a></li>
+            <li class="menu"><a href="#"><img id="app_google" src="app.jpg" alt="app_google"></a></li>
+            <li class="menu"><a href="#"><button id="boton_nav">Iniciar Sesion</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <img class="main_img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google_img">
+
+        <form class="search"></form>
+
+        <div class="boton_main"><button class="boton">Buscar con Google</button>
+            <button class="boton">Me siento con suerte</button></div>
+
+        <p class="texto">Ofrecido por Google en: <a id="link_español" href="#Español(latinoamerica)">Español (Latinoamérica)</a></p>
+    </div>
+
+    <footer>
+        <div class="footer_one">
+            <p>Argentina</p>
+        </div>
+        <div class="footer_two">
+            <div class="footer_izq">
+                <a href="#">Publicidad</a>
+                <a href="#">Negocios</a>
+                <a class="no_spacing" href="#">Sobre Google</a>
+                <a class="no_spacing" href="#">Como funciona la Busqueda</a>
+            </div>
+            <div class="footer_der">
+                <a href="#">Privacidad</a>
+                <a href="#">Condiciones</a>
+                <a href="#">Preferencias</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
